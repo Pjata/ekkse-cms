@@ -1,27 +1,29 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react"
+import PropTypes from "prop-types"
+import { kebabCase } from "lodash"
+import Helmet from "react-helmet"
+import { graphql, Link } from "gatsby"
+import Layout from "../components/Layout"
+import Content, { HTMLContent } from "../components/Content"
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  image,
   tags,
   title,
-  helmet,
+  helmet
 }) => {
   const PostContent = contentComponent || Content
-
+  console.log(image)
   return (
     <section className="section">
-      {helmet || ''}
+      {helmet || ""}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+            <img src={image} />
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -51,17 +53,19 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
+  helmet: PropTypes.instanceOf(Helmet)
 }
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+  console.log(post)
 
   return (
     <Layout>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
+        image={post.frontmatter.image}
         description={post.frontmatter.description}
         helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
         tags={post.frontmatter.tags}
@@ -73,8 +77,8 @@ const BlogPost = ({ data }) => {
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
+    markdownRemark: PropTypes.object
+  })
 }
 
 export default BlogPost
@@ -85,7 +89,8 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY. MMMM DD.", locale: "hu")
+        image
         title
         description
         tags
