@@ -3,13 +3,8 @@ import PropTypes from "prop-types"
 import { TelephelyekPageTemplate } from "../../templates/telephelyek-page"
 
 const ProductPagePreview = ({ entry, getAsset }) => {
-  console.log(entry)
-  /*
   const entryTelephelyek = entry.getIn(["data", "telephelyek"])
   const telephelyek = entryTelephelyek ? entryTelephelyek.toJS() : []
-  console.log(telephelyek)
-  */
-  const telephelyek = []
   return <TelephelyekPageTemplate telephelyek={telephelyek} />
 }
 
