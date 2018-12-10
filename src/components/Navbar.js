@@ -8,32 +8,35 @@ import posed, { PoseGroup } from "react-pose"
 const Modal = posed.div({
   enter: {
     y: 0,
-    position: "fixed",
     transition: {
       y: 0,
       transition: { duration: 400 }
     }
   },
   exit: {
-    position: "fixed",
     y: -100,
     transition: { duration: 400 }
   }
 })
 const Nav = styled(Modal)`
   && {
-    position: fixed !important;
     z-index: 500;
     top: 0px;
     width: 100%;
     background-color: ${props => props.bgColor};
+    position: ${props => props.position} !important;
   }
 `
 
-const Navbar = ({ isVisible, bgColor }) => (
+const Navbar = ({ isVisible, bgColor, position }) => (
   <PoseGroup>
     {isVisible && (
-      <Nav key="navbar" className="navbar" bgColor={bgColor}>
+      <Nav
+        key="navbar"
+        className="navbar"
+        bgColor={bgColor}
+        position={position}
+      >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" style={{}}>
@@ -45,11 +48,14 @@ const Navbar = ({ isVisible, bgColor }) => (
             </Link>
           </div>
           <div className="navbar-start">
-            <Link className="navbar-item" to="/about">
-              About
+            <Link className="navbar-item" to="/rolunk">
+              Rólunk
             </Link>
-            <Link className="navbar-item" to="/products">
-              Products
+            <Link className="navbar-item" to="/telephelyek">
+              Telephelyek
+            </Link>
+            <Link className="navbar-item" to="/archivum">
+              Archívum
             </Link>
           </div>
           <div className="navbar-end">

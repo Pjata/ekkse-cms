@@ -11,9 +11,21 @@ class TemplateWrapper extends PureComponent {
   scrollY = 0
   state = {
     showNav: true,
-    navBgColor: opacolor
+    navBgColor: opacolor,
+    position: "static"
   }
   scrollListener = event => {
+    if (window.scrollY > 500) {
+      this.setState({
+        position: "fixed"
+      })
+    } else {
+      this.setState({
+        position: "static"
+      })
+    }
+
+    console.log(window.scrollY)
     if (window.scrollY > 100 && this.state.navBgColor !== "white") {
       this.setState({
         navBgColor: "white"
@@ -30,7 +42,6 @@ class TemplateWrapper extends PureComponent {
       } else if (this.scrollDir === "down") {
         this.scrollCount = this.scrollCount + 1
         if (this.scrollCount > 10) {
-          console.log("down")
           this.setState({
             showNav: false
           })
@@ -44,7 +55,6 @@ class TemplateWrapper extends PureComponent {
       } else if (this.scrollDir === "up") {
         this.scrollCount = this.scrollCount + 1
         if (this.scrollCount > 4) {
-          console.log("up")
           this.setState({
             showNav: true
           })
@@ -58,11 +68,12 @@ class TemplateWrapper extends PureComponent {
   }
   render() {
     const { children } = this.props
-    const { showNav, navBgColor } = this.state
+    const { showNav, navBgColor, position } = this.state
+    console.log(position)
     return (
       <div>
         <Helmet title="Home | Gatsby + Netlify CMS" />
-        <Navbar bgColor={navBgColor} isVisible={showNav} />
+        <Navbar bgColor={navBgColor} isVisible={showNav} position={position} />
         <div>{children}</div>
       </div>
     )
