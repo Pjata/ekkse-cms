@@ -47,7 +47,7 @@ export const TelephelyekPageTemplate = ({
   </section>
 )
 
-ProductPageTemplate.propTypes = {
+TelephelyekPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   heading: PropTypes.string,

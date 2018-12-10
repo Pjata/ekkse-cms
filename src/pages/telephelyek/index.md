@@ -1,6 +1,6 @@
 ---
-templateKey: 'product-page'
-path: /products
+templateKey: 'telephelyek-page'
+path: /telephelyek
 title: Our Coffee
 image: /img/jumbotron.jpg
 heading: What we offer
