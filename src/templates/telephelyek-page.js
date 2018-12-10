@@ -77,7 +77,7 @@ TelephelyekPage.propTypes = {
   })
 }
 
-export default ProductPage
+export default TelephelyekPage
 
 export const telephelyekPage = graphql`
   query TelephelyekPage($id: String!) {
