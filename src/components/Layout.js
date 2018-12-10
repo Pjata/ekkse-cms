@@ -41,7 +41,7 @@ class TemplateWrapper extends PureComponent {
         this.scrollDir = "down"
       } else if (this.scrollDir === "down") {
         this.scrollCount = this.scrollCount + 1
-        if (this.scrollCount > 10) {
+        if (this.scrollCount > 10 && window.scrollY > 200) {
           this.setState({
             showNav: false
           })
