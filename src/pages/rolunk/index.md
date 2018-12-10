@@ -2,23 +2,12 @@
 templateKey: rolunk-page
 title: Rólunk
 ---
-### Shade-grown coffee
 
-Most ha ezt elmentem mi lesz\
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
-### Single origin
+![](/img/ekkse1.jpg)
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
 
-### Sustainable farming
 
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+# Bemutatkozunk
 
-### Direct sourcing
-
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Az EKKSE 2008-ban alakult meg lelkes támogatók segítségével. Célunk,hogy az esztergomi fiatalok akár hobbi szinten,akár versenyszerűen űzhessék ezt a gyönyörű vízisportot. Büszkék vagyunk rá, hogy alapítótagjaink között van Storcz Botond háromszoros olimpiai bajnok, aki 2008-ban egyesületünk színeiben indult országos és nemzetközi versenyeken. Tagságáról a Magyar Kajak-Kenu Szövetség felnőtt válogatott kapitányának való megválasztása után mondott le, de a mai napig visszajár Esztergomba, és figyelemmel kíséri az itt folyó munkát. 2010-ben új, tágas telephelyet biztosított számunkra a Esztergomi Temesvári Pelbárt Ferences Gimnázium, amely veztőségének ezúton is köszönjük az önzetlen segítséget. 2011-től Egyesületünk CEPEI EKKSE néven folytatja tevékenységét, ezzel is megköszönve a CEPEI Kft. aktív támogatását. Közreműködésük jelentős szerepet játszik az Egyesület életében. Nekik köszönhetjük, hogy Kökény Roland a 2010-2011. évben az EKKSE színeiben versenyezhet.
