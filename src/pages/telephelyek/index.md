@@ -28,6 +28,6 @@ telephelyek:
       anyone.
     heading: Nyári telep
     image: /img/46441648_2096765207055343_4820774346475700224_o.jpg
-    title: Our Coffee
+    title: Csónakház
 ---
 
