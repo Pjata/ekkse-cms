@@ -23,6 +23,7 @@ const Nav = styled(Modal)`
     z-index: 500;
     top: 0px;
     width: 100%;
+    color: white;
     background-color: ${props => props.bgColor};
     position: ${props => props.position} !important;
   }
@@ -53,6 +54,9 @@ const Navbar = ({ isVisible, bgColor, position }) => (
             </Link>
             <Link className="navbar-item" to="/telephelyek">
               Telephelyek
+            </Link>
+            <Link className="navbar-item" to="/elerhetosegek">
+              Elérhetőségek
             </Link>
             <Link className="navbar-item" to="/archivum">
               Archívum
