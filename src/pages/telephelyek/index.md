@@ -15,9 +15,19 @@ telephelyek:
       Teszt Kaldi is the ultimate spot for coffee lovers who want to learn about
       their java’s origin and support the farmers that grew it. We take coffee
       production, roasting and brewing seriously and we’re glad to pass that
-      knowledge to anyone.
-    heading: What we offer
-    image: /img/jumbotron.jpg
+      knowledge to anyone.Teszt Kaldi is the ultimate spot for coffee lovers who
+      want to learn about their java’s origin and support the farmers that grew
+      it. We take coffee production, roasting and brewing seriously and we’re
+      glad to pass that knowledge to anyone.Teszt Kaldi is the ultimate spot for
+      coffee lovers who want to learn about their java’s origin and support the
+      farmers that grew it. We take coffee production, roasting and brewing
+      seriously and we’re glad to pass that knowledge to anyone.Teszt Kaldi is
+      the ultimate spot for coffee lovers who want to learn about their java’s
+      origin and support the farmers that grew it. We take coffee production,
+      roasting and brewing seriously and we’re glad to pass that knowledge to
+      anyone.
+    heading: Nyári telep
+    image: /img/46441648_2096765207055343_4820774346475700224_o.jpg
     title: Our Coffee
 ---
 
