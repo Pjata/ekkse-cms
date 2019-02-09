@@ -28,11 +28,11 @@ export const TelephelyekPageTemplate = ({ telephelyek }) => (
                   </h2>
                 </div>
                 <div className="columns">
-                  <div className="column is-7">
+                  <div className="column is-10">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p>{description}</p>
+                    <p className="has-text-justified">{description}</p>
                   </div>
                 </div>
               </div>

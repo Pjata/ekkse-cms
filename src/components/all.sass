@@ -24,6 +24,20 @@ $primary-invert: $kaldi-red-invert
     margin-top: 0
 
 // Helper Classes
+.full-width-image-container-rolunk
+  width: 100vw
+  height: 300px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 5em -50vw
+  background-size: cover
+  background-position: top
+  display: flex
+  justify-content: center
+  align-items: center
+  @media screen and (min-width: 700px)
+    height: 800px
 .full-width-image-container
   width: 100vw
   height: 400px
@@ -36,6 +50,9 @@ $primary-invert: $kaldi-red-invert
   display: flex
   justify-content: center
   align-items: center
+  @media screen and (min-width: 700px)
+    height: 700px
+
 
 .margin-top-0
   margin-top: 0 !important

@@ -73,7 +73,7 @@ class TemplateWrapper extends PureComponent {
     return (
       <div>
         <Helmet title="Home | Gatsby + Netlify CMS" />
-        <Navbar bgColor={navBgColor} isVisible={showNav} position={position} />
+        <Navbar bgColor={navBgColor} isVisible={true} position={"relative"} />
         <div>{children}</div>
       </div>
     )
