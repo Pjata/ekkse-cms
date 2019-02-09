@@ -1,8 +1,11 @@
 import React, { PureComponent } from "react"
 import Layout from "../../components/Layout"
-//import DateRange from "../../components/HajoFoglalas/DateRange"
-import "rc-steps/assets/index.css"
-import "rc-steps/assets/iconfont.css"
+import styled from "styled-components"
+import DayPickerInput from "react-day-picker/DayPickerInput"
+import MomentLocaleUtils from "react-day-picker/moment"
+import "moment/locale/hu"
+import moment from "moment"
+import "react-day-picker/lib/style.css"
 import Steps, { Step } from "rc-steps"
 //import ApolloClient from "apollo-boost"
 //import gql from "graphql-tag"
@@ -13,6 +16,17 @@ const client = new ApolloClient({
   uri: "http://localhost:4000"
 })
 */
+
+const DateSelectContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+const InputContainer = styled.div`
+  margin: 10px;
+`
+
 class HajoFoglalas extends PureComponent {
   state = {
     from: undefined,
@@ -80,11 +94,20 @@ class HajoFoglalas extends PureComponent {
         <section className="section">
           <div className="container">
             <div className="content">
-              <Steps current={0}>
-                <Steps.Step title="Időpont választás" />
-                <Steps.Step title="second" />
-                <Steps.Step title="third" />
-              </Steps>
+              <DateSelectContainer>
+                <InputContainer>
+                  <DayPickerInput
+                    placeholder={"Mikortól..."}
+                    formatDate={date => moment(date).format("YYYY.MM.DD")}
+                  />
+                </InputContainer>
+                <InputContainer>
+                  <DayPickerInput
+                    placeholder={"Meddig..."}
+                    formatDate={date => moment(date).format("YYYY.MM.DD")}
+                  />
+                </InputContainer>
+              </DateSelectContainer>
             </div>
           </div>
         </section>
